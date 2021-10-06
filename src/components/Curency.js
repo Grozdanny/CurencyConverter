@@ -7,17 +7,17 @@ class CurencyChange extends React.Component{
         super(props);
         this.state = {
             Pln: 0,
-            Eur: 0,
+            Sek: 0,
         };
     }
 
     changeCurency(value,scale){
         switch(scale){
-            case "Eur":
-                this.setState({Pln: value * 4.6009, Eur: value});
+            case "Sek":
+                this.setState({Pln: value * 0.45, Sek: value});
                 return;
             case "Pln":
-                this.setState({Eur: value * 0.21735, Pln: value});
+                this.setState({Sek: value * 2.2, Pln: value});
                 return;
         }
     }
@@ -26,8 +26,8 @@ class CurencyChange extends React.Component{
         return<>
         <p>Pln</p>
         <input type="text" value={this.state.Pln} onChange={(event) => this.changeCurency(event.target.value, "Pln") }/>
-        <p>Eur</p>
-        <input type="text" value={this.state.Eur} onChange={(event) => this.changeCurency(event.target.value, "Eur") }/>
+        <p>Sek</p>
+        <input type="text" value={this.state.Sek} onChange={(event) => this.changeCurency(event.target.value, "Sek") }/>
         </>
     }
 }

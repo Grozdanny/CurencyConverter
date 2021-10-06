@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import Curency from './components/Curency';
-import Hello from "./components/Clock"
+import CurencyChange from './components/Curency';
 
    const Moneyy = (
        <>
-       <Hello />
-       <Curency />
+       <CurencyChange />
        </>
    )
-    ReactDOM.render(Moneyy, document.getElementById('Root'));
+    ReactDOM.render(Moneyy, document.getElementById('root'));
 

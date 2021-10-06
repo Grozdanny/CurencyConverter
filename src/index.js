@@ -1,7 +1,7 @@
-import Curency from './components/Curency';
+import CurencyTime from './components/Curency.js';
 const Moneyy = (
     <>
-    <Curency />
+    <CurencyTime />
     </>
 )
  ReactDOM.render(Moneyy, document.getElementById('Root'));

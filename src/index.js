@@ -11,7 +11,7 @@ class Exchange extends React.Component {
     };
 
 this.changeCurency = this.changeCurency.bind(this);
-}
+};
 
 changeCurency(value, scale){
     switch(scale){

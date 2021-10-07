@@ -4,7 +4,7 @@ import ReactDOM, { render } from 'react-dom'
 class Curency extends React.Component {
     constructor(props) {
      super(props);
-}
+};
 
 render() {
     return (
